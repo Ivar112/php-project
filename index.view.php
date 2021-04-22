@@ -43,11 +43,26 @@
             <strong>Status: </strong><?= ucwords($task['completed'] ? 'complete' : 'incomplete'); ?>
     
         </li>
+
+        <li>
             
+            <strong>Repeat: </strong> 
+            
+            <?php if ($task['repeated']) {
+                
+                echo '&#x0221E;';
+
+            } else {
+                echo '&#x02717';
+            }
+
+            ?>
            
+        </li>
 
     </ul>
 
+    
     <p>My very first branch, baby!</p>
 
 </body>
